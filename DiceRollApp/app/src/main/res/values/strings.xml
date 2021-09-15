@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DiceRollApp</string>
+    <string name="input_message">-</string>
+    <string name="btn_setmessage">Roll the next Dice</string>
+    <string name="btn2_setmessage">Roll all Dices</string>
+    <string name="increment_message">+</string>
+    <string name="decrement_setmessage">-</string>
+    <string name="counter_message">1</string>
+</resources>
