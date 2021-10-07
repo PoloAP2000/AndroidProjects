@@ -7,12 +7,26 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import java.lang.Exception
+import java.net.URL
 
 class Dice(private val numSides: Int) {
 
     fun roll(): Int {
         return (1..numSides).random()
     }
+}
+
+@Throws(Exception::class)
+fun test() {
+    val server = MockWebServer()
+    server.enqueue(MockResponse().setBody("hello, world!"))
+    server.play()
+    val baseUrl: URL = server.getUrl("/v1/chat/")
+    val chat = Chat(baseUrl)
+    chat.loadMore()
+    assertEquals("hello, world!", chat.messages())
+    server.shutdown()
 }
 
 var n = 1
