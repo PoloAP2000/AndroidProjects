@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Gallery&amp;GPS</string>
+    <string name="btnChoose">Open Gallery</string>
+    <string name="GalleryImage"></string>
+    <string name="btnCapture">Capture Photo</string>
+</resources>
